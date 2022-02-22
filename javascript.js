@@ -9,10 +9,6 @@ function tabla(){
 }
 
 
-
-
-
-
 class problema {
     constructor() {
 
