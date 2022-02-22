@@ -81,7 +81,7 @@ li {
 
 li a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
     text-align: center;
     position: relative;
     padding: 20px 70px;
@@ -153,6 +153,24 @@ li a:hover {
     position: relative; 
     text-align: center;
 }
+.carousel {
+    height: 500px;
+  }
+  
+  .carousel-inner, .carousel-item {
+    height: 350px;
+  }
+
+  .carousel-item {
+    text-align: center;
+  }
+  
+  #portfolio {
+      position: relative;
+    background: rgb(85, 1, 53);
+  }
+
+
 
 
 
