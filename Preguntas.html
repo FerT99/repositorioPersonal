@@ -1,103 +1,52 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link href = "yo.css" rel = "stylesheet">
-    </head>
-    <header>
-        <title>Preguntas</title>
-        <nav class = 'header'>
-            <img src = 'imagenes/Logo_personal.jpg' width="220px" height="220px" alt = 'Logo personal' id = 'logo'/>
-            <ul>
-            <li><a href = 'yo.html'>Inicio</a></button></li>
-            <li><a href = 'bootstrap.html'>Bootstrap</a></li>
-            <li><a href = 'contacto.html'>Contacto</a></li>
-            <li><a href = 'Preguntas.html'>Preguntas</a></li>
-        </ul>
-        </nav>
-    </header>
-    <body>
+  <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = 'yo.css' rel="stylesheet">
+  </head>
 
-                .dropdown {
-                float: left;
-                overflow: hidden;
-                }
+  <header>
+    <title>Biografía</title>
+    <nav class = 'header'>
+        <img src = 'imagenes/Logo_personal.jpg' width="220px" height="220px" alt = 'Logo personal' id = 'logo'/>
+        <ul>
+        <li><a href = 'yo.html'>Inicio</a></button></li>
+        <li><a href = 'bootstrap.html'>Bootstrap</a></li>
+        <li><a href = 'contacto.html'>Contacto</a></li>
+        <div class="dropdown">
+            <li><button class="dropbtn" onclick="myFunction()" >Preguntas
+              <i class="fa fa-caret-down"></i>
+            </button></li>
+      </ul>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Laboratorio 1</a>
+          <a href="#">Laboratorio 2</a>
+          <a href="#">Laboratorio 3</a>
+        </div>
+      </div>
+    </ul>
+    </nav>
+</header>
+    <body>
+    <script>
+   
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
 
-                .dropdown .dropbtn {
-                cursor: pointer;
-                font-size: 20px;
-                border: none;
-                outline: none;
-                color: rgb(255, 255, 255);
-                margin-left: 300px;
-                padding: 14px 16px;
-                background-color: rgb(129, 0, 28);
-                font-family: inherit;
-                margin-top: 80px;
-                }
-
-                .dropdown-content {
-                display: none;
-                position: absolute;
-                margin-left: 300px;
-                background-color: #ffffff;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 2;
-                }
-
-                .dropdown-content a {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-                }
-
-                .dropdown-content a:hover {
-                background-color: rgb(0, 82, 189);
-                }
-
-                .show {
-                display: block;
-                }
-                </style>
-        <!--<script>
-            alert(" \tBienvenido a la sección de preguntas y funciones :D \n")
-            </script>-->
-            <div class="dropbtn">
-                <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Laboratorio 1
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                  <a href="#">Laboratorio 1</a>
-                  <a href="#">Laboratorio 2</a>
-                  <a href="#">Laboratorio 3</a>
-                </div>
-                </div> 
-              </div>
-            <script>
-                /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                  document.getElementById("myDropdown").classList.toggle("show");
-                }
-                
-                // Close the dropdown if the user clicks outside of it
-                window.onclick = function(e) {
-                  if (!e.target.matches('.dropbtn')) {
-                  var myDropdown = document.getElementById("myDropdown");
-                    if (myDropdown.classList.contains('show')) {
-                      myDropdown.classList.remove('show');
-                    }
-                  }
-                }
-                </script>
-    </body>
-
-</html>
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+        </header>
+      </body>
+      </html>
+    

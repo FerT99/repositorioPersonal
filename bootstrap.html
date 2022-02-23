@@ -2,9 +2,11 @@
 
 <html>
     <head>
-        <link href = "yo.css" rel = "stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </head>
+        <link href = "yo.css" rel = "stylesheet">
+      </head>
     <header>
         <title>Bootstrap</title>
         <nav class = 'header'>
@@ -13,7 +15,17 @@
             <li><a href = 'yo.html'>Inicio</a></button></li>
             <li><a href = 'bootstrap.html'>Bootstrap</a></li>
             <li><a href = 'contacto.html'>Contacto</a></li>
-            <li><a href = 'Preguntas.html'>Preguntas</a></li>
+            <div class="dropdown">
+              <li><button class="dropbtn" onclick="myFunction()" >Preguntas
+                <i class="fa fa-caret-down"></i>
+              </button></li>
+        </ul>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Laboratorio 1</a>
+            <a href="#">Laboratorio 2</a>
+            <a href="#">Laboratorio 3</a>
+          </div>
+        </div>
         </ul>
         </nav>
     </header>
@@ -59,5 +71,6 @@
           </div>
         </section>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          <script src = 'javascript.js'></script>
     </body>
 </html>

@@ -3,6 +3,8 @@
 <html>
 <head>
     <link href = "yo.css" rel = "stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
     <title>Biografía</title>
@@ -12,7 +14,17 @@
         <li><a href = 'yo.html'>Inicio</a></button></li>
         <li><a href = 'bootstrap.html'>Bootstrap</a></li>
         <li><a href = 'contacto.html'>Contacto</a></li>
-        <li><a href = 'Preguntas.html'>Preguntas</a></li>
+        <div class="dropdown">
+            <li><button class="dropbtn" onclick="myFunction()" >Preguntas
+              <i class="fa fa-caret-down"></i>
+            </button></li>
+      </ul>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Laboratorio 1</a>
+          <a href="#">Laboratorio 2</a>
+          <a href="#">Laboratorio 3</a>
+        </div>
+      </div>
     </ul>
     </nav>
 </header>
@@ -33,9 +45,7 @@
             <a href = 'https://www.linkedin.com/in/fernanda-torres-a87394217' target=_blank><img src = 'imagenes/linklogo.png' alt = 'linkedin: Fernanda Torres' width="60px" height="60px" id = 'linkedin' class = "social"/></a>
             <a href = 'https://github.com/FerT99' target=_blank><img src = 'imagenes/gitlogo.png' alt = 'Github: FerT99' width="60px" height="60px" id = 'github' class = "social"/></a>
         </footer>
-        <script src = 'javascript.js'>
-    
-        </script>
+        <script src = 'javascript.js'></script>
     </body>
 
     
