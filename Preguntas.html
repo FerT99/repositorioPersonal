@@ -2,51 +2,40 @@
 
 <html>
   <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratorios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href = 'yo.css' rel="stylesheet">
   </head>
 
   <header>
-    <title>Biografía</title>
-    <nav class = 'header'>
-        <img src = 'imagenes/Logo_personal.jpg' width="220px" height="220px" alt = 'Logo personal' id = 'logo'/>
+      <nav class = 'header'>
+      <img src = 'imagenes/Logo_personal.jpg' width="220px" height="220px" alt = 'Logo personal' id = 'logo'/>
+        
         <ul>
-        <li><a href = 'yo.html'>Inicio</a></button></li>
-        <li><a href = 'bootstrap.html'>Bootstrap</a></li>
-        <li><a href = 'contacto.html'>Contacto</a></li>
-        <div class="dropdown">
-            <li><button class="dropbtn" onclick="myFunction()" >Preguntas
-              <i class="fa fa-caret-down"></i>
-            </button></li>
-      </ul>
-        <div class="dropdown-content" id="myDropdown">
-          <a href="#">Laboratorio 1</a>
-          <a href="#">Laboratorio 2</a>
-          <a href="#">Laboratorio 3</a>
-        </div>
-      </div>
-    </ul>
-    </nav>
-</header>
-    <body>
-    <script>
-   
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
+          <li><a href = 'yo.html'>Inicio</a></button></li>
+          <li><a href = 'bootstrap.html'>Bootstrap</a></li>
+          <li><a href = 'contacto.html'>Contacto</a></li>
+          <div class="dropdown">
+              <li><button class="dropbtn" onclick="myFunction()" >Laboratorios
+                <i class="fa fa-caret-down"></i>
+              </button></li>
+        </ul>
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-      if (!e.target.matches('.dropbtn')) {
-      var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
-      }
-    }
-    </script>
-        </header>
-      </body>
-      </html>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="lab1.html">Laboratorio 1</a>
+            <a href="lab3.html">Laboratorio 3</a>
+            <a href="lab4.html">Laboratorio 4</a>
+            <a href="lab5.html">Laboratorio 5</a>
+            <a href="lab6.html">Laboratorio 6</a>
+          </div>
+        </div>
+      </nav>
+</header>
+
+  <body>
+    <script src = 'javascript.js'></script>
+  </body>
+  
+</html>
     

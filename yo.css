@@ -166,9 +166,10 @@ li a:hover {
   }
   
   #portfolio {
-      position: relative;
+    position: relative;
     background: rgb(85, 1, 53);
   }
+
   .dropdown {
     float:inline-end;
     overflow: hidden;
@@ -188,7 +189,7 @@ li a:hover {
     margin: 0;
   }
 
-  a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  .dropdown:hover .dropbtn, .dropbtn:focus {
     background-color: rgb(255, 0, 85);
   }
 
