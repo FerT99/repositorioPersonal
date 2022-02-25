@@ -17,25 +17,46 @@ Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.
 5:
 Función: inverso. Parámetros: Un número. Regresa: El número con sus dígitos en orden inverso.
 6:
-Crea una solución para un problema de tu elección (puede ser algo relacionado con tus intereses, alguna problemática que hayas identificado en algún ámbito, 
+Crea una solución para un problema de tu elección (puede ser algo relacionado con tus intereses, 
+    alguna problemática que hayas identificado en algún ámbito, 
     un problema de programación que hayas resuelto en otro lenguaje, 
     un problema de la ACM, entre otros). El problema debe estar descrito en un documento HTML, 
     y la solución implementada en JavaScript, utilizando al menos la creación de un objeto, 
     el objeto además de su constructor deben tener al menos 2 métodos. 
     Muestra los resultados en el documento HTML.*/
 
+    //ejercicio 6
 class problema {
     constructor() {
+        //constructor para armar un cachorro
+        function cachorrito(raza_cachorrito, nombre_cachorrito, color_cachorrito) {
+            this.cachorrito = nuevo_cachorrito;
+            this.nombre = nuevo_nombre;
+            this.raza = nueva_raza;
+            this.color = nuevo_color;
+            this.crear = crear_cachorrito();
+            }
+
+        //método
+        function crear_cachorrito() {
+            document.write("Tu cachorrito nuevo ", this.nombre, " ", this.raza, " con color ", this.color, ".<br />");
+            }
+            
+        //llamar al método
+        mi_cachorrito = new cachorrito("Schnauzer", "Moka", "negro");
+        mi_cachorrito.crear_cachorrito();
 
     }
 }
-function tabla(){
+
+//ejercicio 1
+function tabla() {
     var numero = prompt("Ingresa un número: ")
 
     for (let i = 0; i < numero.length(); i++){
-
-        document.write('Resultado: ' + ask)
-        
+        var resultado = document.write('Resultado: ' + i**2, i**3)
+        return resultado;
     }
 
 }
+tabla();
