@@ -1,6 +1,28 @@
-/*
+const { response } = require("express");
+const express = require("express");
+const { listenerCount } = require("process");
+const app = express();
 
-const http = require("http");
+app.use((request, response, next) => {
+    console.log("Middleware!");
+    next();
+});
+
+app.use('/ruta', (request, response, next) => {
+    response.send('Respuesta de la ruta "/ruta"'); 
+    response.send('Respuesta de la ruta "/ruta"'); 
+});
+
+app.use((request, response, next) => {
+    console.log("Otro middleware");
+    response.send("Hola mundo"); //manda la respuesta
+})
+
+//Capacidad de reaccionar a diferentes rutas se hace con otro middleware
+
+app.listen(3000);
+
+/*const http = require("http");
 
 const server = http.createServer( (request, response) => {
 

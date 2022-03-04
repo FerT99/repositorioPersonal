@@ -60,3 +60,43 @@ function tabla() {
 
 }
 tabla();
+
+//ejercicio 3 
+
+function contador(arreglo) {
+
+    var arreglo = new Array[1, 2, 6, 7, 9, 20, 30];
+
+    for (var i = 0; i < arreglo.length; i++) {
+
+        if (i < 0 || i > 0 || i === 0) {
+            return i;
+        }
+    }
+}
+
+//ejercicio 4
+
+/*4:
+Función: promedios. Parámetros: Un arreglo de arreglos de números. 
+Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.*/
+
+function promedio(arreglo2) {
+
+    var arreglo2 = new Array[1, 30, 10, 20, 30, 50];
+
+    for (i = 0; i < arreglo2.length; i++) {
+        
+        for (j = 0; j < arreglo2[j]; j++){
+
+            n = Math.random(round(1, 40));
+
+            arreglo2.push(n);
+
+            return promedio;
+        }
+    }
+}
+
+//Automatizar las pruebas
+console.assert()
