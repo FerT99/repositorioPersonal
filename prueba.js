@@ -98,5 +98,7 @@ function promedio(arreglo2) {
     }
 }
 
+
+
 //Automatizar las pruebas
 console.assert()
