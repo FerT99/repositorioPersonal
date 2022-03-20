@@ -98,6 +98,37 @@ function promedio(arreglo2) {
     }
 }
 
+/*ejercicio 2
+Entrada: Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria. 
+Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta.*/
+
+function pideNum(){
+
+    var today = new Date();
+    var minutos = today.getMinutes();
+    var segundos = today.getSeconds();
+
+    suma = Math.round(random(1, 20));
+    var resultado = prompt("Ingresa el resultado de la suma: ")
+
+    if (resultado === suma){
+        console.log("Resultado correcto");
+        console.log("Tardaste " + minutos + " minutos con " + segundos + "segundos para contestar.");
+    }
+    else {
+        console.log("Resultado incorrecto");
+        console.log("Tardaste " + minutos + " minutos con " + segundos + "segundos para contestar.");
+    }
+}
+
+//5: Función: inverso. Parámetros: Un número. Regresa: El número con sus dígitos en orden inverso.
+
+function inverso(num){
+
+    for(var i = num; i < num.length(); i--) {
+        return num;
+    }
+}
 
 
 //Automatizar las pruebas
