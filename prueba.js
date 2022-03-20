@@ -105,18 +105,19 @@ Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el 
 function pideNum(){
 
     var today = new Date();
-    var minutos = today.getMinutes();
-    var segundos = today.getSeconds();
+    console.timeLog();
 
     suma = Math.round(random(1, 20));
     var resultado = prompt("Ingresa el resultado de la suma: ")
 
     if (resultado === suma){
         console.log("Resultado correcto");
+        console.timeEnd();
         console.log("Tardaste " + minutos + " minutos con " + segundos + "segundos para contestar.");
     }
     else {
         console.log("Resultado incorrecto");
+        console.timeEnd();
         console.log("Tardaste " + minutos + " minutos con " + segundos + "segundos para contestar.");
     }
 }
