@@ -33,6 +33,116 @@
     </header>
 
     <body>
+        <script>
+    //ejercicio 6
+class problema {
+    constructor() {
+        //constructor para armar un cachorro
+        function cachorrito(raza_cachorrito, nombre_cachorrito, color_cachorrito) {
+            this.cachorrito = nuevo_cachorrito;
+            this.nombre = nuevo_nombre;
+            this.raza = nueva_raza;
+            this.color = nuevo_color;
+            this.crear = crear_cachorrito();
+            }
+
+        //método
+        function crear_cachorrito() {
+            document.write("Tu cachorrito nuevo ", this.nombre, " ", this.raza, " con color ", this.color, ".<br />");
+            }
+            
+        //llamar al método
+        mi_cachorrito = new cachorrito("Schnauzer", "Moka", "negro");
+        mi_cachorrito.crear_cachorrito();
+
+    }
+}
+
+//ejercicio 1
+function tabla() {
+    var numero = prompt("Ingresa un número: ")
+
+    for (let i = 0; i < numero.length(); i++){
+        var resultado = document.write('Resultado: ' + i**2, i**3)
+        return resultado;
+    }
+
+}
+tabla();
+
+//ejercicio 3 
+
+function contador(arreglo) {
+
+    var arreglo = new Array[1, 2, 6, 7, 9, 20, 30];
+
+    for (var i = 0; i < arreglo.length; i++) {
+
+        if (i < 0 || i > 0 || i === 0) {
+            return i;
+        }
+    }
+}
+
+//ejercicio 4
+
+/*4:
+Función: promedios. Parámetros: Un arreglo de arreglos de números. 
+Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.*/
+
+function promedio(arreglo2) {
+
+    var arreglo2 = new Array[1, 30, 10, 20, 30, 50];
+
+    for (i = 0; i < arreglo2.length; i++) {
+        
+        for (j = 0; j < arreglo2[j]; j++){
+
+            n = Math.random(round(1, 40));
+
+            arreglo2.push(n);
+
+            return promedio;
+        }
+    }
+}
+
+/*ejercicio 2
+Entrada: Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria. 
+Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta.*/
+
+function pideNum(){
+
+    var today = new Date();
+    console.timeLog();
+
+    suma = Math.round(random(1, 20));
+    var resultado = prompt("Ingresa el resultado de la suma: ")
+
+    if (resultado === suma){
+        console.log("Resultado correcto");
+        console.timeEnd();
+        console.log("Tardaste " + minutos + " minutos con " + segundos + "segundos para contestar.");
+    }
+    else {
+        console.log("Resultado incorrecto");
+        console.timeEnd();
+        console.log("Tardaste " + minutos + " minutos con " + segundos + "segundos para contestar.");
+    }
+}
+
+//5: Función: inverso. Parámetros: Un número. Regresa: El número con sus dígitos en orden inverso.
+
+function inverso(num){
+
+    for(var i = num; i < num.length(); i--) {
+        return num;
+    }
+}
+
+//Automatizar las pruebas
+console.assert()
+</script>
         <p>¿Qué diferencias y semejanzas hay entre Java y JavaScript?
             ¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)
             ¿Qué métodos tienen los arreglos? (Menciona al menos 5*)
