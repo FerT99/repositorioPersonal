@@ -1,0 +1,18 @@
+<%- include('includes/header.ejs') %>
+
+<% if (cachorritos.length > 0) { %> 
+    <% for (let cachorrito of cachorritos) { %> 
+        <div class="card" style="width: 18rem;">
+            <img src="https://comoorganizarlacasa.com/wp-content/uploads/2016/06/Fotos-a-cachorritos-16.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><%= cachorrito.nombre %></p>
+            </div>
+          </div>
+    <% } %>
+<% } else { %>
+    <h3>No tenemos cachorritos</h3>
+<% } %>
+
+</div>
+<a href="/perros/nuevo">Agregar un nuevo Cachorrito</a>
+</main>

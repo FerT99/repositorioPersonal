@@ -4,8 +4,6 @@ const filesystem = require("fs");
 
 const router = express.Router();
 
-const cachorritos = [{nombre: "Moka"}, {nombre: "Lucky"}, {nombre: "Rocky"}];
-
 router.get('/ruta', (request, response, next) => {
     let respuesta = '<!DOCTYPE html><html lang="es-mx"><head><title>Cachorritos</title><meta charset="utf-8"></meta></head><body><h1>Cachorritos</h1><main><h2>Hay muchas razas de cachorritos.</h2><p>Yo tengo 4 cachorritos.</p></body></html>'
     response.send(respuesta)

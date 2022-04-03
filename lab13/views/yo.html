@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href = "/yo.css" rel = "stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <header>
+        <title>Biografía</title>
+        <nav class = 'header'>
+            <img src = 'imagenes/Logo_personal.jpg' width="220px" height="220px" alt = 'Logo personal' id = 'logo'/>
+            <ul>
+            <li><a href = 'yo.html'>Inicio</a></button></li>
+            <li><a href = 'media.html'>Media</a></li>
+            <li><a href = 'Trayectoria.html'>Trayectoria</a></li>
+            <div class="dropdown">
+                <li><button class="dropbtn" onclick="myFunction()" >Laboratorios
+                  <i class="fa fa-caret-down"></i>
+                </button></li>
+          </ul>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="lab1.html">Laboratorio 1</a>
+                <a href="lab3.html">Laboratorio 3</a>
+                <a href="lab4.html">Laboratorio 4</a>
+                <a href="lab5.html">Laboratorio 5</a>
+                <a href="lab6.html">Laboratorio 6</a>
+            </div>
+          </div>
+        </ul>
+        </nav>
+    </header>
+
+    <body>
+        <h3 id = 'about'>Sobre mí...</h3>
+        <img src = 'imagenes/selfielado.jpeg' width="370px" height="450px" alt = 'Foto mía' id = "foto"/>
+        <div id = "soy">
+        <p>Soy estudiante de ingeniería en tecnologías computacionales (ITC) en el Tec <br>de Monterrey, campus Querétaro.</p>
+        <p>Actualmente trabajo dando clases de programación en <a href = 'http://byjusfutureschool.com' id = "byjusfutureschool" target = _blank>Byju's Future School</a><br> para niños y adolescentes.</p>
+    </div>
+
+        <footer id = 'foot1'>
+            <h4 id = 'contactext'>Contacto:</h4>
+            <a href = 'https://instagram.com/fertorres_01' target=_blank><img src = 'imagenes/iglogo.png' alt = 'insta: fertorres_01' width="60px" height="60px" id = 'igminim' class = "social"/></a>
+            <a href = 'contacto.html' target=_blank><img src = 'imagenes/correologo.png' alt = 'correo: fertorres638@gmail.com' width="60px" height="60px" id = 'correo' class = "social"/></a>
+            <a href = 'https://www.linkedin.com/in/fernanda-torres-a87394217' target=_blank><img src = 'imagenes/linklogo.png' alt = 'linkedin: Fernanda Torres' width="60px" height="60px" id = 'linkedin' class = "social"/></a>
+            <a href = 'https://github.com/FerT99' target=_blank><img src = 'imagenes/gitlogo.png' alt = 'Github: FerT99' width="60px" height="60px" id = 'github' class = "social"/></a>
+        </footer>
+
+        <script src = 'javascript.js'></script>
+    </body>
+</html>
