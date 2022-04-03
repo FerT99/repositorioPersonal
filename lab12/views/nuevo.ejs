@@ -1,0 +1,13 @@
+<%- include('includes/header.ejs') %>
+<h1>Agreguemos cachorritos.</h1>
+<main>
+    <h2>Agrega un cachorrito: </h2>
+    <p>Ingresa un cachorrito: </p>
+    <form action = '/perros/nuevo' method = 'POST'>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" required>
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="/perros/">Regresar a ver perritos.</a>
+
+</main>
