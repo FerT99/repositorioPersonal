@@ -1,7 +1,5 @@
 <%- include('includes/header.ejs') %>
 
-<p>hola</p>
-
 <% if (cachorritos.length > 0) { %> 
     <% for (let cachorrito of cachorritos) { %> 
         <div class="card" style="width: 18rem;">
@@ -14,9 +12,10 @@
 <% } else { %>
     <h3>No tenemos cachorritos</h3>
 <% } %>
+
+<% if (ultimo_perro != '') { %>
+  <p>El último cachorrito fue: <%= ultimo_perro %> </p>
+<% } %>
 </div>
-
-
 <a href="/perros/nuevo">Agregar un nuevo Cachorrito</a>
-
 </main>
