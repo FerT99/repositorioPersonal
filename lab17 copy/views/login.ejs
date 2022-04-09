@@ -1,0 +1,14 @@
+<%- include('includes/header.ejs') %>
+
+<h1>Bienvenido!</h1>
+
+<main>
+    <form action = '/login/nuevoUsuario' method = 'POST'> <!--enviar respuesta por medio de un input-->
+        <label for="name">Ingresa tu nombre: </label>
+        <input type = 'text' name = 'name' required>
+        <label for="contraseña">Ingresa tu contraseña: </label>
+        <input type="text" name = 'contraseña' required>
+        <input type = 'submit' value = 'Iniciar sesión'>
+    </form>
+
+</main>
