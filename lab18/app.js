@@ -4,6 +4,9 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const session = require('express-session');
 
+const csrf = require('csurf');
+const csrfProtection = csrf(); 
+
 const bodyParser = require('body-parser');
 //no sabemos para qué es
 app.use(bodyParser.urlencoded({extended: false}));
@@ -16,10 +19,10 @@ app.use(session({ //asegurar sesión única y encriptada
 
 const rutas_cachorritos = require('./routes/perros.routes');
 const rutas_gatitos = require('./routes/gatos.routes');
+const { login } = require("./controllers/login_controller.js");
 
 app.use('/perros', rutas_cachorritos);
 app.use('/gatos', rutas_gatitos);
-
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
@@ -49,5 +52,7 @@ app.use((request, response, next) => {
     console.log('Middleware x2');
     response.send('Quiubo'); 
 });
+
+app.use(csrfProtection); 
 
 app.listen(3000);
